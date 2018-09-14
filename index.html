@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+	<script src="script.js"></script>
+</head>
+<body style="background-color:#777">
+<h1>COMMODORE 64 BASIC SPRITE MAKER</h1>
+<h1 style="font-size:14px">Created by PixelMaker04 (C)2018</h1>
+  <div id="palette">
+  
+   <!div class="pen" style="background-color:black;" onclick="setPenColor('black')"></div>
+  </div>
+
+  <p></p>
+<div id="container">
+<div class="tc1">
+<div class="tc">
+<div id="pixelField">
+<div id="art">
+  <div class="row" style="text-align:center">
+  <div class="group">
+  <div class="bit_num">128</div><div class="bit_num">64</div><div class="bit_num">32</div><div class="bit_num">16</div><div class="bit_num">8</div><div class="bit_num">4</div><div class="bit_num">2</div><div class="bit_num">1</div>
+  </div>
+  <div class="group">
+  <div class="bit_num">128</div><div class="bit_num">64</div><div class="bit_num">32</div><div class="bit_num">16</div><div class="bit_num">8</div><div class="bit_num">4</div><div class="bit_num">2</div><div class="bit_num">1</div>
+  </div>
+    <div class="group">
+  <div class="bit_num">128</div><div class="bit_num">64</div><div class="bit_num">32</div><div class="bit_num">16</div><div class="bit_num">8</div><div class="bit_num">4</div><div class="bit_num">2</div><div class="bit_num">1</div>
+  </div>
+  </div>
+  <div class="row" id="row1">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-11" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-11" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-11" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-11" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-11" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-11" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-11" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-11" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-12" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-12" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-12" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-12" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-12" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-12" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-12" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-12" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-13" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-13" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-13" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-13" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-13" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-13" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-13" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-13" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row2">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-21" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-21" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-21" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-21" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-21" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-21" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-21" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-21" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-22" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-22" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-22" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-22" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-22" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-22" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-22" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-22" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-23" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-23" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-23" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-23" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-23" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-23" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-23" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-23" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row3">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-31" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-31" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-31" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-31" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-31" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-31" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-31" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-31" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-32" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-32" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-32" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-32" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-32" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-32" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-32" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-32" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-33" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-33" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-33" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-33" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-33" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-33" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-33" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-33" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+</div>
+<div id="art">
+  <div class="row" id="row4">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-41" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-41" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-41" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-41" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-41" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-41" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-41" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-41" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-42" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-42" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-42" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-42" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-42" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-42" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-42" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-42" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-43" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-43" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-43" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-43" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-43" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-43" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-43" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-43" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row5">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-51" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-51" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-51" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-51" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-51" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-51" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-51" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-51" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-52" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-52" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-52" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-52" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-52" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-52" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-52" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-52" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-53" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-53" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-53" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-53" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-53" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-53" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-53" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-53" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row6">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-61" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-61" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-61" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-61" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-61" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-61" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-61" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-61" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-62" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-62" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-62" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-62" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-62" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-62" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-62" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-62" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-63" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-63" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-63" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-63" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-63" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-63" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-63" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-63" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+</div>
+<div id="art">
+  <div class="row" id="row7">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-71" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-71" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-71" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-71" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-71" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-71" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-71" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-71" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-72" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-72" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-72" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-72" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-72" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-72" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-72" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-72" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-73" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-73" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-73" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-73" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-73" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-73" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-73" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-73" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row8">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-81" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-81" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-81" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-81" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-81" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-81" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-81" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-81" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-82" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-82" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-82" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-82" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-82" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-82" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-82" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-82" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-83" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-83" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-83" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-83" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-83" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-83" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-83" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-83" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row9">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-91" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-91" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-91" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-91" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-91" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-91" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-91" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-91" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-92" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-92" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-92" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-92" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-92" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-92" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-92" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-92" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-93" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-93" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-93" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-93" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-93" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-93" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-93" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-93" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+</div>
+<div id="art">
+  <div class="row" id="row10">
+ <div class="group" id="group1">
+    <a class="pixel" id="128-101" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-101" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-101" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-101" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-101" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-101" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-101" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-101" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-102" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-102" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-102" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-102" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-102" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-102" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-102" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-102" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-103" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-103" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-103" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-103" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-103" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-103" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-103" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-103" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row11">
+  <div class="group" id="group1">
+    <a class="pixel" id="128-111" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-111" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-111" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-111" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-111" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-111" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-111" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-111" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-112" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-112" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-112" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-112" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-112" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-112" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-112" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-112" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-113" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-113" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-113" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-113" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-113" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-113" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-113" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-113" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row12">
+ <div class="group" id="group1">
+    <a class="pixel" id="128-121" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-121" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-121" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-121" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-121" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-121" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-121" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-121" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-122" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-122" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-122" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-122" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-122" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-122" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-122" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-122" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-123" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-123" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-123" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-123" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-123" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-123" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-123" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-123" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+</div>
+<div id="art">
+  <div class="row" id="row13">
+ <div class="group" id="group1">
+    <a class="pixel" id="128-131" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-131" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-131" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-131" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-131" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-131" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-131" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-131" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-132" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-132" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-132" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-132" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-132" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-132" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-132" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-132" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-133" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-133" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-133" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-133" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-133" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-133" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-133" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-133" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row14">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-141" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-141" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-141" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-141" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-141" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-141" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-141" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-141" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-142" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-142" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-142" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-142" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-142" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-142" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-142" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-142" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-143" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-143" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-143" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-143" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-143" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-143" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-143" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-143" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row15">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-151" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-151" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-151" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-151" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-151" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-151" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-151" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-151" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-152" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-152" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-152" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-152" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-152" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-152" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-152" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-152" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-153" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-153" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-153" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-153" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-153" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-153" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-153" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-153" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+</div>
+<div id="art">
+  <div class="row" id="row16">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-161" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-161" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-161" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-161" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-161" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-161" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-161" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-161" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-162" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-162" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-162" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-162" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-162" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-162" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-162" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-162" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-163" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-163" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-163" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-163" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-163" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-163" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-163" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-163" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row17">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-171" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-171" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-171" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-171" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-171" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-171" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-171" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-171" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-172" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-172" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-172" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-172" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-172" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-172" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-172" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-172" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-173" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-173" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-173" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-173" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-173" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-173" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-173" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-173" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row18">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-181" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-181" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-181" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-181" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-181" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-181" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-181" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-181" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-182" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-182" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-182" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-182" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-182" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-182" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-182" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-182" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-183" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-183" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-183" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-183" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-183" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-183" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-183" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-183" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+</div>
+<div id="art">
+  <div class="row" id="row19">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-191" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-191" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-191" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-191" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-191" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-191" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-191" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-191" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-192" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-192" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-192" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-192" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-192" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-192" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-192" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-192" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-193" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-193" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-193" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-193" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-193" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-193" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-193" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-193" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row20">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-201" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-201" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-201" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-201" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-201" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-201" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-201" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-201" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-202" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-202" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-202" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-202" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-202" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-202" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-202" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-202" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-203" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-203" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-203" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-203" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-203" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-203" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-203" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-203" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+  <div class="row" id="row21">
+   <div class="group" id="group1">
+    <a class="pixel" id="128-211" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-211" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-211" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-211" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-211" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-211" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-211" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-211" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+   <div class="group" id="group2">
+    <a class="pixel" id="128-212" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-212" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-212" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-212" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-212" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-212" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-212" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-212" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+    <div class="group" id="group3">
+    <a class="pixel" id="128-213" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="64-213" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="32-213" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="16-213" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="8-213" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="4-213" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="2-213" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+    <a class="pixel" id="1-213" onclick="setPixelColor(this)" onmouseup="setPixelBit(this.id)"></a>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="tc" id="dvData">
+<table class="bitCode" id="bitCode">
+  <tr>
+	<th class="bit">DEC1</th>
+	<th class="bit">DEC2</th>
+	<th class="bit">DEC3</th>
+  </tr>
+  
+  <tr><td class="bit" id="11" onclick="bitReset(this.id)">0</td><td class="bit" id="12" onclick="bitReset(this.id)">0</td><td class="bit" id="13" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="21" onclick="bitReset(this.id)">0</td><td class="bit" id="22" onclick="bitReset(this.id)">0</td><td class="bit" id="23" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="31" onclick="bitReset(this.id)">0</td><td class="bit" id="32" onclick="bitReset(this.id)">0</td><td class="bit" id="33" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="41" onclick="bitReset(this.id)">0</td><td class="bit" id="42" onclick="bitReset(this.id)">0</td><td class="bit" id="43" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="51" onclick="bitReset(this.id)">0</td><td class="bit" id="52" onclick="bitReset(this.id)">0</td><td class="bit" id="53" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="61" onclick="bitReset(this.id)">0</td><td class="bit" id="62" onclick="bitReset(this.id)">0</td><td class="bit" id="63" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="71" onclick="bitReset(this.id)">0</td><td class="bit" id="72" onclick="bitReset(this.id)">0</td><td class="bit" id="73" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="81" onclick="bitReset(this.id)">0</td><td class="bit" id="82" onclick="bitReset(this.id)">0</td><td class="bit" id="83" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="91" onclick="bitReset(this.id)">0</td><td class="bit" id="92" onclick="bitReset(this.id)">0</td><td class="bit" id="93" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="101" onclick="bitReset(this.id)">0</td><td class="bit" id="102" onclick="bitReset(this.id)">0</td><td class="bit" id="103" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="111" onclick="bitReset(this.id)">0</td><td class="bit" id="112" onclick="bitReset(this.id)">0</td><td class="bit" id="113" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="121" onclick="bitReset(this.id)">0</td><td class="bit" id="122" onclick="bitReset(this.id)">0</td><td class="bit" id="123" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="131" onclick="bitReset(this.id)">0</td><td class="bit" id="132" onclick="bitReset(this.id)">0</td><td class="bit" id="133" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="141" onclick="bitReset(this.id)">0</td><td class="bit" id="142" onclick="bitReset(this.id)">0</td><td class="bit" id="143" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="151" onclick="bitReset(this.id)">0</td><td class="bit" id="152" onclick="bitReset(this.id)">0</td><td class="bit" id="153" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="161" onclick="bitReset(this.id)">0</td><td class="bit" id="162" onclick="bitReset(this.id)">0</td><td class="bit" id="163" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="171" onclick="bitReset(this.id)">0</td><td class="bit" id="172" onclick="bitReset(this.id)">0</td><td class="bit" id="173" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="181" onclick="bitReset(this.id)">0</td><td class="bit" id="182" onclick="bitReset(this.id)">0</td><td class="bit" id="183" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="191" onclick="bitReset(this.id)">0</td><td class="bit" id="192" onclick="bitReset(this.id)">0</td><td class="bit" id="193" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="201" onclick="bitReset(this.id)">0</td><td class="bit" id="202" onclick="bitReset(this.id)">0</td><td class="bit" id="203" onclick="bitReset(this.id)">0</td></tr>
+  <tr><td class="bit" id="211" onclick="bitReset(this.id)">0</td><td class="bit" id="212" onclick="bitReset(this.id)">0</td><td class="bit" id="213" onclick="bitReset(this.id)">0</td></tr>
+</table>
+<div class='button'>
+<a href="#" id ="export" role='button' style="color:#fff;background-color:#444;border-radius:5px;padding:3px;" type="button">Export Binary Data</a>
+</div>
+</div>
+</div>
+
+<div class="button">
+<input style="color:#fff;background-color:#444;border-radius:5px;padding:3px;" type="button" value="Start New" onClick="window.location.reload()">
+<input style="color:#fff;background-color:#444;border-radius:5px;padding:3px;" type="button" value="Export Bitmap" onClick="expSprite()">
+</div>
+</div>
+</body>
+</html>

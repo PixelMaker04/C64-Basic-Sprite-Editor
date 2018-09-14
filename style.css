@@ -1,0 +1,118 @@
+* {
+
+}
+
+#container {
+  display: block;
+  width:100%;
+  
+  left: 30%;
+  position: relative;
+}
+
+#art {
+  border-spacing: 0px;
+  background-color: #444;
+  border: 1px solid #444;
+}
+
+.row {
+  display: table-row;
+}
+
+.group {
+  border: 1px solid #444;
+  display: table-cell;
+}
+
+#pixelField{
+	display: block;
+	margin:0 auto;
+}
+
+.pixel {
+  border: 1px solid #444;
+  display: table-cell;
+  background-color: white;
+  width: 24px;
+  height: 21px;
+}
+
+.bit_num{
+  border: 1px solid #444;
+  color: #fff;
+  display: table-cell;
+  width: 24px;
+  height: 21px;
+  text-align: center;
+}
+
+a:hover {
+	border: 1px solid cyan;
+}
+
+.pen {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.bitCode{
+	
+	font-family: Courier;
+	font-size:10px;
+	display: table-row;
+	text-align:center;
+	padding:0px;
+}
+
+.bitRow{
+	display: table-row;
+	font-family: Courier;
+	font-size: 20px;
+}
+
+.bit{
+		padding:0;
+	margin:0;
+	display: table-cell;
+	font-family: Courier;
+	font-size: 18px;
+	padding-bottom: 4px;
+}
+
+.bits {
+	font-family: Courier;
+	font-size: 19px;
+	writing-mode: vertical-lr;
+    text-orientation: sideways;
+    text-align:right;
+}
+
+.tools{
+	font-family: Courier;
+	font-size: 16px;
+	padding:0px;
+}
+
+h1 {
+	font-family: Courier;
+	font-size: 24px;
+	text-align:center;
+}
+
+.table
+{
+	display:table;
+}
+
+.tc
+{
+	display: table-cell;
+}
+
+.tc1
+{
+	display: table-row;
+}
